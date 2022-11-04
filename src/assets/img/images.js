@@ -1,6 +1,6 @@
 const IMAGES = {
 
-    logo: require("./Cyberlogo.jpg"),
+    logo: require("./cyberpaylogo.svg"),
     cylogo: require("./cylogo.png")
 }
 

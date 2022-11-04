@@ -1,0 +1,22 @@
+.body {
+  background-image: url("../assets/img/Adminfood.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.fw {
+  font-weight: 700 !important;
+}
+
+.format-logo {
+  margin-top: 80px;
+}
+
+.txt-sub {
+  width: 27% !important;
+}
+.adminBtn {
+  color: #206aa2 !important;
+}

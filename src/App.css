@@ -1,8 +1,21 @@
-.navbar {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.nav-bar {
   background-color: #fbfbfb;
+  /* height: 70px !important; */
 }
 
 .bg {
   background-color: #e5e5e5 !important;
   height: 100vh !important;
+}
+
+.navbutton {
+  background-color: #eaf3fb !important;
+  border: none !important;
+  color: #206aa2 !important;
+}
+.nav-txt {
+  color: #959799 !important;
+  text-decoration: none !important;
 }
