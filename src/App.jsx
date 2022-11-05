@@ -1,7 +1,8 @@
 import { Fragment } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout/Layout";
+import AuthLayout from "./components/Layout/AuthLayout";
+import DashboardLayout from "./components/Layout/DashboardLayout";
 import ChangePassword from "./pages/ChangePassword";
 import Consumptions from "./pages/Consumptions";
 import ContactAdmin from "./pages/ContactAdmin";
@@ -15,14 +16,15 @@ import ResetPassword from "./pages/ResetPassword";
 import SignIn from "./pages/SignIn";
 import StaffDashboardOverview from "./pages/StaffDashboardOverview";
 import { routes } from "./Utilities/Routes";
+import '@tremor/react/dist/esm/tremor.css';
 
 function App() {
   return (
     <Fragment>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<SignIn />} />
+        <Routes>
+          <Route element={<AuthLayout/>}>
+            <Route index path="/" element={<SignIn />} />
             <Route path={routes.ForgotPassword} element={<ForgotPassword />} />
             <Route path={routes.ResetPassword} element={<ResetPassword />} />
             <Route
@@ -35,6 +37,8 @@ function App() {
               path={routes.ContactAdminPage}
               element={<ContactAdminPage />}
             />
+          </Route>
+          <Route element={<DashboardLayout/>}>
             <Route
               path={routes.StaffDashboardOverview}
               element={<StaffDashboardOverview />}
@@ -49,8 +53,8 @@ function App() {
               element={<HRStaffDashboard />}
             />
             <Route path={routes.RegisterStaff} element={<RegisterStaff />} />
-          </Routes>
-        </Layout>
+          </Route>
+        </Routes>
       </Router>
     </Fragment>
   );

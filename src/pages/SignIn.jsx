@@ -5,10 +5,8 @@ import '../styles/SignIn.css';
 
 const SignIn = () => {
   return (
-    <Container fluid className="h-100 d-flex align-items-center justify-content-center">
-      <Card className="cards px-4">
-        {" "}
-        <Card.Title className="text-center">Sign In</Card.Title>
+    <Fragment>
+      <Card.Title className="text-center">Sign In</Card.Title>
         <Card.Subtitle className="minorText text-center">Fill details to access your account</Card.Subtitle>
         <Card.Body className="mt-4">
           <Form>
@@ -43,13 +41,12 @@ const SignIn = () => {
                 <Card.Link href="/" className="text-decoration-none minorText">Forgot pin?</Card.Link>
               </Col>
             </Row>
-            <Button className="w-100 mt-5 h6 mainBtn text-center text-white" size="lg">
+            <Button className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
               Sign In
             </Button>
           </Form>
         </Card.Body>
-      </Card>
-    </Container>
+    </Fragment>
   );
 };
 

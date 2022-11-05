@@ -1,0 +1,13 @@
+.cards {
+    background-color: #F6FAFD !important;
+    border: none !important;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.nextRow {
+    padding-left: 32px;
+    padding-right: 32px;
+}

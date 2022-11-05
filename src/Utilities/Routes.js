@@ -15,3 +15,9 @@ export const routes = {
 
 export const authRoutes = [routes.Signin, routes.ForgotPassword, routes.ResetPassword,
      routes.EmailVerification, routes.ChangePassword, routes.ContactAdminPage]
+
+export const dashboardRoutes = [
+    routes.StaffDashboardOverview, routes.Consumptions,
+    routes.HRDashboardOverview, routes.HRStaffDashboard,
+    routes.RegisterStaff
+]
