@@ -1,9 +1,20 @@
 import React, { Fragment } from "react";
-import { Row, Col, Form, Button } from "react-bootstrap";
+import { Row, Col, Form } from "react-bootstrap";
 import CustomCard from "../components/CustomCard";
-import { BarChart } from "@tremor/react";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Bar } from 'react-chartjs-2';
 import data from '../data.json';
+import {options, dataStyling } from '../Utilities/barConfig.js';
 import '../styles/StaffDashboardOverview.css';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const StaffDashboardOverview = () => {
   return (
@@ -25,17 +36,10 @@ const StaffDashboardOverview = () => {
         </div>
       </Row>
       <Row className="m-0 px-4 firstRow h-auto">
-        <Col xs={6} className="chart p-3">
-          <BarChart
-            data={data}
-            dataKey="month"
-            categories={["Total value"]}
-            colors={["slate"]}
-            marginTop="mt-6"
-            yAxisWidth="w-12"
-          />
+        <Col xs={12} md={6} className="chart p-3">
+          <Bar options={options} data={dataStyling} />
         </Col>
-        <Col xs={6} className='d-flex flex-column gap-2'>
+        <Col xs={12} md={6} className='d-flex flex-column gap-2 px-0 px-md-2'>
           <CustomCard pillColor={'#206AA2'} title={'Meal consumption'} value={12450}/>
           <CustomCard pillColor={'#C79960'} title={'Extra consumption'} value={12450}/>
           <CustomCard pillColor={'#6C63FF'} title={'Consumption days'} value={24}/>

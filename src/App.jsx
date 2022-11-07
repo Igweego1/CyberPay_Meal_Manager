@@ -15,8 +15,9 @@ import RegisterStaff from "./pages/RegisterStaff";
 import ResetPassword from "./pages/ResetPassword";
 import SignIn from "./pages/SignIn";
 import StaffDashboardOverview from "./pages/StaffDashboardOverview";
+import Vendor from './pages/Vendor';
 import { routes } from "./Utilities/Routes";
-import '@tremor/react/dist/esm/tremor.css';
+import Finance from "./pages/Finance";
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
               path={routes.HRStaffDashboard}
               element={<HRStaffDashboard />}
             />
+            <Route path={routes.Vendor} element={<Vendor />}/>
+            <Route path={routes.Finance} element={<Finance />}/>
             <Route path={routes.RegisterStaff} element={<RegisterStaff />} />
           </Route>
         </Routes>

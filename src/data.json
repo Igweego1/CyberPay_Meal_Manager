@@ -11,34 +11,34 @@
         "mealConsumption": 12450,
         "extraConsumption": 12450,
         "consumptionDays": 22,
-        "Total value": 24900
+        "Total value": 12500
     },
     {
         "month": "March",
         "mealConsumption": 12450,
         "extraConsumption": 12450,
         "consumptionDays": 24,
-        "Total value": 24900
+        "Total value": 21000
     },
     {
         "month": "April",
         "mealConsumption": 12450,
         "extraConsumption": 12450,
         "consumptionDays": 5,
-        "Total value": 24900
+        "Total value": 15400
     },
     {
         "month": "May",
         "mealConsumption": 12450,
         "extraConsumption": 12450,
         "consumptionDays": 30,
-        "Total value": 24900
+        "Total value": 22900
     },
     {
         "month": "June",
         "mealConsumption": 12450,
         "extraConsumption": 12450,
         "consumptionDays": 24,
-        "Total value": 24900
+        "Total value": 19350
     }
 ]

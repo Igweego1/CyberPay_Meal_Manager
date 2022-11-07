@@ -10,7 +10,9 @@ export const routes = {
     Consumptions: "/consumptions",
     HRDashboardOverview: "/hrdashboard/overview",
     HRStaffDashboard: "/hrdashboard/staff",
-    RegisterStaff: "/registerstaff"
+    RegisterStaff: "/registerstaff",
+    Vendor: '/vendor',
+    Finance: '/finance'
 }
 
 export const authRoutes = [routes.Signin, routes.ForgotPassword, routes.ResetPassword,
@@ -19,5 +21,5 @@ export const authRoutes = [routes.Signin, routes.ForgotPassword, routes.ResetPas
 export const dashboardRoutes = [
     routes.StaffDashboardOverview, routes.Consumptions,
     routes.HRDashboardOverview, routes.HRStaffDashboard,
-    routes.RegisterStaff
+    routes.RegisterStaff, routes.Vendor, routes.Finance
 ]

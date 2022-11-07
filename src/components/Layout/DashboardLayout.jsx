@@ -20,23 +20,43 @@ const DashboardLayout = () => {
       icon: IMAGES.cutlery
     },
     {
-      name: 'Staff',
-      path: routes.StaffDashboardOverview,
-      icon: IMAGES.wallet
+      name: 'Profile',
+      path: routes.Signin,
+      icon: IMAGES.user
     }
   ]
+
+  if(window.location.pathname !== routes.Vendor && window.location.pathname !== routes.StaffDashboardOverview) {
+    links.splice(2, 0, 
+      {
+        name: 'Staff',
+        path: routes.StaffDashboardOverview,
+        icon: IMAGES.wallet
+      },
+      {
+        name: 'Vendors',
+        path: routes.Vendor,
+        icon: IMAGES.wallet
+      },
+      {
+        name: 'Finances',
+        path: routes.Finance,
+        icon: IMAGES.wallet
+      }
+    )
+  }
 
   if(dashboardRoutes.indexOf(window.location.pathname) !== -1){
     return (
       <Fragment>
         <Container fluid className="p-0">
             <Row className="m-0">
-              <Col xs={12} md={2} className="sidebar d-flex flex-column align-items-center p-0">
-                <Navbar className="d-flex flex-column w-100 fixed-start py-3" bg="white">
-                  <Navbar.Brand className="w-100 m-0 px-4">
+              <Col xs={0} md={2} className="sidebar d-flex flex-column align-items-center p-0">
+                <Navbar className="d-flex flex-column w-100 fixed-start my-2 justify-content-between" bg="white">
+                  <Navbar.Brand className="w-100 m-0 px-4 border-bottom">
                     <img src={IMAGES.logo}/>
                   </Navbar.Brand>
-                  <Card className='welcome-card w-75 p-3'>
+                  <Card className='welcome-card w-75 p-3 my-4'>
                     <Card.Subtitle className="mb-2">Welcome back</Card.Subtitle>
                     <Card.Subtitle className="titleName">Chisom</Card.Subtitle>
                   </Card>

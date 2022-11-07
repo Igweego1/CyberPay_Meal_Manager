@@ -18,7 +18,7 @@ const Consumptions = () => {
                 return <option key={index}>{x.month} 2022</option>
               })}
             </Form.Select>
-            <button className="mainButton border-0 rounded text-white p-2 h6">Download Report</button>
+            <button className="mainButton border-0 rounded text-white p-2 h6 mb-0">Download Report</button>
           </div>
         </div>
       </Row>
