@@ -7,6 +7,11 @@
     background-color: #F6FAFD !important;
 }
 
+.h14{
+    font-size: 14px !important;
+    color: #5F6063 !important;
+}
+
 .h6 {
     font-size: 12px !important;
     color: #5F6063 !important;
@@ -60,4 +65,9 @@
 
 .text-danger:hover {
     color: #FFFFFF !important;
+}
+
+.borders {
+    color: #5F6063;
+    border-bottom: 0.1px solid #E8EAED;
 }

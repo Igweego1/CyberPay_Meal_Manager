@@ -3,6 +3,7 @@
 }
 
 .bg {
+  background-color: #F6FAFD;
   height: 100vh !important;
 }
 
@@ -16,4 +17,10 @@
 
 .borderLight {
   border-bottom: 1px solid #E8EAED;
+}
+
+.nav-button {
+  border: none !important;
+  background-color: #EAF3FB !important;
+  color: #206AA2 !important;
 }

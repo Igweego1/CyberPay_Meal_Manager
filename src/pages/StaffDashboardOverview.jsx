@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import { Row, Col, Form } from "react-bootstrap";
+import { Row, Col, Form, Table } from "react-bootstrap";
 import CustomCard from "../components/CustomCard";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import data from '../data.json';
+import data from '../Utilities/data.json';
 import {options, dataStyling } from '../Utilities/barConfig.js';
 import '../styles/StaffDashboardOverview.css';
 
@@ -20,7 +20,7 @@ const StaffDashboardOverview = () => {
   return (
     <Fragment>
       <Row className="m-0 px-4 py-4">
-        <div className="d-flex justify-content-between">
+        <div className="d-flex flex-column flex-md-row justify-content-between">
           <div>
             <h2>Overview</h2>
             <h6 className="text-secondary">Meal Orders Breakdown</h6>
@@ -48,26 +48,30 @@ const StaffDashboardOverview = () => {
       </Row>
       <Row className="m-4 p-4 chart align-items-center">
         <CustomCard pillColor={'#206AA2'} title={'Recent consumptions'}/>
-        <Row className="borders m-0 h6 fw-bold py-2">
-          <Col className="text-start">Month</Col>
-          <Col className="text-center">Meal consumption</Col>
-          <Col className="text-center">Extra consumption</Col>
-          <Col className="text-center">Consumption days</Col>
-          <Col className="text-center">Total value</Col>
-          <Col></Col>
-        </Row>
-          {data.map((x, index) => {
-            return (
-              <Row className='py-2 m-0 h6 align-items-center' key={index}>
-                <Col>{x.month}</Col>
-                <Col>NGN {x.mealConsumption}</Col>
-                <Col>NGN {x.extraConsumption}</Col>
-                <Col>{x.consumptionDays}</Col>
-                <Col>NGN {x["Total value"]}</Col>
-                <button className="viewButton text-white rounded p-2">View</button>
-              </Row>
-            )
-          })}
+        <Table responsive borderless>
+          <thead className="borders m-0 h6 fw-bold">
+            <th className="text-start py-2">Month</th>
+            <th className="text-start py-2">Meal consumption</th>
+            <th className="text-start py-2">Extra consumption</th>
+            <th className="text-start py-2">Consumption days</th>
+            <th className="text-start py-2">Total value</th>
+            <th></th>
+          </thead>
+          <tbody>
+            {data.map((x, index) => {
+              return (
+                <tr className='py-2 m-0 h6 align-items-center' key={index}>
+                  <td>{x.month}</td>
+                  <td>NGN {x.mealConsumption}</td>
+                  <td>NGN {x.extraConsumption}</td>
+                  <td>{x.consumptionDays}</td>
+                  <td>NGN {x["Total value"]}</td>
+                  <td><button className="viewButton text-white rounded p-2">View</button></td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </Table>
       </Row>
     </Fragment>
     

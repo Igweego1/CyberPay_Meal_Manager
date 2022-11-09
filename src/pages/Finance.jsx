@@ -3,7 +3,7 @@ import { Row, Col, Form} from "react-bootstrap";
 import CustomCard from "../components/CustomCard";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import data from '../data.json';
+import data from '../Utilities/data.json';
 import {options, dataStyling } from '../Utilities/barConfig.js';
 import '../styles/StaffDashboardOverview.css';
 
