@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Navbar, Button } from "react-bootstrap";
+import {useNavigate} from 'react-router-dom';
 import IMAGES from "../assets/img/images";
 import '../App.css';
+import { routes } from "../Utilities/Routes";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <Container fluid className="home-body">
       <Navbar className="nav-bar">
@@ -12,8 +15,8 @@ const Home = () => {
             <img src={IMAGES.logo} alt="cyberlogo" />
           </Navbar.Brand>
           <div className="d-flex gap-3 h6 align-items-center">
-            Don't have an account?{" "}
-            <Button className="nav-button px-3" size="sm">Sign up</Button>
+            Already have an account?{" "}
+            <Button onClick={() => navigate(routes.Signin)} className="nav-button px-3" size="sm">Sign in</Button>
           </div>
         </Container>
       </Navbar>
