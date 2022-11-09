@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import { Form, Button, Card } from "react-bootstrap";
-import OtpInput from "react-otp-input";
+import OTPInput from "otp-input-react";
 import { useNavigate } from "react-router-dom";
 import {routes} from '../Utilities/Routes';
 import '../App.css';
@@ -16,12 +16,13 @@ const EmailVerification = () => {
       <Card.Subtitle className="minorText text-center">We have sent code to your email</Card.Subtitle>
       <Card.Body className="mt-4">
         <Form>
-          <OtpInput
-            containerStyle={'w-100 gap-3'}
-            inputStyle={'w-100 verifyInput inputBorder'}
+          <OTPInput
+            className={'w-100 gap-3 verifyInput'}
+            inputClassName={'w-100 h-100 m-0 inputBorder'}
             value={code}
+            otpType={'number'}
             onChange={handleChange}
-            numInputs={6}
+            OTPLength={6}
           />
           <Button onClick={() => navigate(routes.ChangePassword)} className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
             Verify Account
