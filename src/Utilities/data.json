@@ -1,0 +1,44 @@
+[
+  {
+    "month": "January,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 24,
+    "Total value": 24900
+  },
+  {
+    "month": "February,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 22,
+    "Total value": 12500
+  },
+  {
+    "month": "March,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 24,
+    "Total value": 21000
+  },
+  {
+    "month": "April,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 5,
+    "Total value": 15400
+  },
+  {
+    "month": "May,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 30,
+    "Total value": 22900
+  },
+  {
+    "month": "June,2022",
+    "mealConsumption": 12450,
+    "extraConsumption": 12450,
+    "consumptionDays": 24,
+    "Total value": 19350
+  }
+]

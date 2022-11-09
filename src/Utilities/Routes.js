@@ -1,19 +1,23 @@
 export const routes = {
-    Signin: "/",
-    ForgotPassword: "/auth/forgotpassword",
-    ResetPassword: "/auth/resetpassword",
-    EmailVerification: "/auth/emailverification",
-    ChangePassword: "/auth/changepassword",
-    ContactAdmin: "/contactadmin",
-    ContactAdminPage: "/contactadminpage",
-    StaffDashboardOverview: "/staffdashboard/overview",
-    Consumptions: "/consumptions",
-    HRDashboardOverview: "/hrdashboard/overview",
-    HRStaffDashboard: "/hrdashboard/staff",
-    RegisterStaff: "/registerstaff",
-    VendorDashboardOverview: "/vendordashboard/overview",
-    FinanceDashboardOverview: "financedashboard/overview"
+    ErrorPage: "*",
+    Home: "/",
+    SignIn: "/auth/sign-in",
+    ForgotPassword: "/auth/forgot-password",
+    ResetPassword: "/auth/reset-password",
+    EmailVerification: "/auth/email-verification",
+    ChangePassword: "/auth/change-password",
+    Onboarding: "/onboarding",
+    StaffDashboardOverview: "/dashboard/staff",
+    Consumptions: "/dashboard/consumptions",
+    HRDashboardOverview: "/dashboard/hr",
+    HRStaffDashboard: "/dashboard/hr/staff",
+    Vendor: "/dashboard/vendor",
+    Finance: "dashboard/finance"
+    
 }
 
-export const authRoutes = [routes.Signin, routes.ForgotPassword, routes.ResetPassword,
+export const authRoutes = [routes.ErrorPage,routes.Home,routes.SignIn, routes.ForgotPassword, routes.ResetPassword,
      routes.EmailVerification, routes.ChangePassword, routes.ContactAdminPage]
+
+export const dashboardRoutes = [routes.StaffDashboardOverview, routes.HRDashboardOverview, routes.Vendor,
+routes.Finance, routes.Consumptions, routes.HRStaffDashboard ]

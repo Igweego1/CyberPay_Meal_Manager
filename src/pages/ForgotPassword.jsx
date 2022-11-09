@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { Button, Card, Col, Form, Row } from "react-bootstrap";
-import "../styles/ForgotPassword.css";
 
 const ForgotPassword = () => {
   return (

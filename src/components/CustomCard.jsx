@@ -1,11 +1,31 @@
-import { Card } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 
-const CustomCard = () => {
+const CustomCard = ({ pillColor, title, value }) => {
   return (
-    <Card>
+    <Card
+      style={{ backgroundColor: "#F6FAFD" }}
+      className="cards w-100 p-0 h-100"
+    >
       <Card.Body>
-        <Card.Title>{Title}</Card.Title>
-        <Card.Subtitle></Card.Subtitle>
+        <Row className={`${value ? "" : "w-50 align-items-center"}`}>
+          <Col xs={1}>
+            <Card.Img
+              style={{
+                backgroundColor: `${pillColor}`,
+                width: "18px",
+                height: "30px",
+              }}
+            ></Card.Img>
+          </Col>
+          <Col xs={11}>
+            <h6>{title}</h6>
+            {value && (
+              <Card.Subtitle>
+                {value > 24 && "N"} {value}
+              </Card.Subtitle>
+            )}
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
   );

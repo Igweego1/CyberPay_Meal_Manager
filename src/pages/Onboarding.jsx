@@ -1,8 +1,7 @@
 import { Button, Container } from "react-bootstrap";
-import "../styles/ContactAdmin.css";
 import cyberPaylogo from "../assets/img/cyberlogoadmin.svg";
 
-const ContactAdmin = () => {
+const Onboarding = () => {
   return (
     <Container fluid className="body ">
       <div className="ms-5">
@@ -18,4 +17,4 @@ const ContactAdmin = () => {
   );
 };
 
-export default ContactAdmin;
+export default Onboarding;

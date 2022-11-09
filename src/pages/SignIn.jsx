@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Card, Row, Button, Col, Form } from "react-bootstrap";
-import "../styles/SignIn.css";
 
 const SignIn = () => {
   return (
@@ -35,7 +34,11 @@ const SignIn = () => {
           <Row className="justify-content-between">
             <Col>
               <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                <Form.Check type="checkbox" label="Remember Me" />
+                <Form.Check
+                  style={{ color: "#5F6063" }}
+                  type="checkbox"
+                  label="Remember Me"
+                />
               </Form.Group>
             </Col>
             <Col className="text-end">

@@ -2,29 +2,32 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AuthLayout from "./components/Layout/AuthLayout";
+import DashBoardLayout from "./components/Layout/DashboardLayout";
 import ChangePassword from "./pages/ChangePassword";
 import Consumptions from "./pages/Consumptions";
-import ContactAdmin from "./pages/ContactAdmin";
-import ContactAdminPage from "./pages/ContactAdminPage";
 import EmailVerification from "./pages/EmailVerification";
-import FinanceDashboardOverview from "./pages/FinanceDashboardOverview";
+import ErrorPage from "./pages/ErrorPage";
+import Finance from "./pages/Finance";
 import ForgotPassword from "./pages/ForgotPassword";
 import HRDashboardOverview from "./pages/HRDashboardOverview";
 import HRStaffDashboard from "./pages/HRStaffDashboard";
-import RegisterStaff from "./pages/RegisterStaff";
 import ResetPassword from "./pages/ResetPassword";
-import SignIn from "./pages/SignIn";
 import StaffDashboardOverview from "./pages/StaffDashboardOverview";
-import VendorDashboardOverview from "./pages/VendorDashboardOverview";
+import Vendor from "./pages/Vendor";
 import { routes } from "./Utilities/Routes";
+import Onboarding from "./pages/Onboarding";
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
 
 function App() {
   return (
     <Fragment>
       <Router>
-        <AuthLayout>
-          <Routes>
-            <Route path="/" element={<SignIn />} />
+        <Routes>
+          <Route element={<AuthLayout />}>
+            <Route path={routes.ErrorPage} element={<ErrorPage />} />
+            <Route path={routes.SignIn} element={<SignIn />} />
+            <Route path={routes.Home} element={<Home />} />
             <Route path={routes.ForgotPassword} element={<ForgotPassword />} />
             <Route path={routes.ResetPassword} element={<ResetPassword />} />
             <Route
@@ -32,11 +35,10 @@ function App() {
               element={<EmailVerification />}
             />
             <Route path={routes.ChangePassword} element={<ChangePassword />} />
-            <Route path={routes.ContactAdmin} element={<ContactAdmin />} />
-            <Route
-              path={routes.ContactAdminPage}
-              element={<ContactAdminPage />}
-            />
+            <Route path={routes.Onboarding} element={<Onboarding />} />
+            <Route path={routes.Home} element={<Home />} />
+          </Route>
+          <Route element={<DashBoardLayout />}>
             <Route
               path={routes.StaffDashboardOverview}
               element={<StaffDashboardOverview />}
@@ -50,17 +52,11 @@ function App() {
               path={routes.HRStaffDashboard}
               element={<HRStaffDashboard />}
             />
-            <Route path={routes.RegisterStaff} element={<RegisterStaff />} />
-            <Route
-              path={routes.VendorDashboardOverview}
-              element={<VendorDashboardOverview />}
-            />
-            <Route
-              path={routes.FinanceDashboardOverview}
-              element={<FinanceDashboardOverview />}
-            />
-          </Routes>
-        </AuthLayout>
+
+            <Route path={routes.Vendor} element={<Vendor />} />
+            <Route path={routes.Finance} element={<Finance />} />
+          </Route>
+        </Routes>
       </Router>
     </Fragment>
   );

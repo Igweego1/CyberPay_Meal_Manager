@@ -19,3 +19,204 @@
   color: #959799 !important;
   text-decoration: none !important;
 }
+
+.h14 {
+  font-size: 14px !important;
+  color: #5f6063 !important;
+}
+.welcome-card {
+  border: none !important;
+  background-color: #f6fafd !important;
+}
+.titleName {
+  color: #206aa2 !important;
+}
+.modalBtn {
+  background-color: #206aa2 !important;
+  text-align: center !important;
+}
+
+/* #Onboarding */
+.body {
+  background-image: url("./assets/img/food.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.fw {
+  font-weight: 700 !important;
+}
+
+.format-logo {
+  margin-top: 80px;
+}
+
+.txt-sub {
+  width: 27% !important;
+}
+.adminBtn {
+  color: #206aa2 !important;
+}
+
+/* contact Admin */
+
+input::placeholder {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+
+input,
+select {
+  font-size: 12px !important;
+  height: 45px;
+  outline: none;
+  box-shadow: none !important;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #206aa2 !important;
+}
+
+.cards .h6,
+.form-label {
+  font-size: 14px;
+}
+
+.form-label {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.cards {
+  border: none !important;
+  width: 420px;
+  padding: 20px;
+}
+
+.minorText {
+  color: #959799 !important;
+  font-size: 16px;
+}
+
+.input-group-text {
+  border: none !important;
+  background-color: #ffffff !important;
+}
+
+.mainBtn {
+  background-color: #206aa2 !important;
+}
+
+/* Change-password */
+.Cards {
+  border: none !important;
+  width: 400px;
+  padding: 20px !important;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #206aa2 !important;
+}
+
+.form-label {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+/* Forgot-Password */
+.form-label {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+.cards .h6,
+.form-label {
+  font-size: 14px;
+}
+
+.minorText {
+  color: #959799;
+  font-size: 16px;
+}
+
+/* Hr Dashboard Overview */
+.bg-dashboard {
+  background-color: white !important;
+}
+
+.dash-btn {
+  background-color: white !important ;
+  color: #232323 !important;
+  border: none !important;
+}
+.h6 {
+  font-size: 12px !important;
+  color: #5f6063;
+}
+
+.menu-button {
+  background-color: #ffffff !important;
+  border: none !important;
+}
+.menu-button:hover .img {
+  filter: brightness(0) saturate(100%) invert(36%) sepia(38%) saturate(1232%)
+    hue-rotate(166deg) brightness(89%) contrast(88%);
+}
+
+.menu-button:hover h6 {
+  color: #206aa2 !important;
+}
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:active {
+  background-color: #f2f2f2 !important;
+}
+
+.profile-img {
+  width: 50px !important;
+}
+.form-height {
+  height: 40px;
+}
+.mainBtn {
+  background-color: #206aa2 !important;
+  width: 185px;
+  height: 40px;
+}
+.card-group {
+  background-color: #f6fafd !important ;
+  border: none !important;
+}
+.viewButton {
+  width: 110px !important;
+  background-color: #208ba2 !important;
+  border: none !important;
+}
+.borders {
+  color: #5f6063;
+  border-bottom: 0.1px solid #e8eaed;
+}
+
+/* Staff dashboard */
+.container-search {
+  background-color: #f2f2f2;
+  height: 40px;
+}
+
+.container-search input {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.container-search input:focus {
+  background-color: transparent;
+  border: none !important;
+}
+.container-search button {
+  color: #5f6063;
+  height: 100%;
+}

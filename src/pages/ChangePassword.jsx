@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import { Button, Card, Form } from "react-bootstrap";
-import "../styles/ChangePassword.css";
 
 const ChangePassword = () => {
   return (
