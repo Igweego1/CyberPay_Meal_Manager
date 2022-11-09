@@ -5,7 +5,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Toolti
 import { Bar } from 'react-chartjs-2';
 import data from '../Utilities/data.json';
 import {options, dataStyling } from '../Utilities/barConfig.js';
-import '../styles/StaffDashboardOverview.css';
+import '../App.css';
 
 ChartJS.register(
     CategoryScale,

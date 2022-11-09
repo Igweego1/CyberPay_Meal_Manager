@@ -1,7 +1,7 @@
 import React, {Fragment} from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import OtpInput from "react-otp-input";
-import '../styles/EmailVerification.css';
+import '../App.css';
 
 const EmailVerification = () => {
   const [code, setCode] = React.useState('');

@@ -1,13 +1,11 @@
-import React from "react";
-import { Card, Container, Form, Row, Col, InputGroup, Button } from "react-bootstrap";
-import '../styles/ForgotPassword.css';
+import React, { Fragment } from "react";
+import { Card, Form, Row, Col, Button } from "react-bootstrap";
+import '../App.css';
 
 const ForgotPassword = () => {
   return (
-    <Container fluid className="h-100 d-flex align-items-center justify-content-center">
-      <Card className="cards px-4">
-        {" "}
-        <Card.Title className="text-center">Forgot Password</Card.Title>
+    <Fragment>
+      <Card.Title className="text-center">Forgot Password</Card.Title>
         <Card.Subtitle className="minorText text-center">No worries! You can create a new one.</Card.Subtitle>
         <Card.Body className="mt-4">
           <Form>
@@ -32,8 +30,7 @@ const ForgotPassword = () => {
             </Button>
           </Form>
         </Card.Body>
-      </Card>
-    </Container>
+    </Fragment>
   )
 };
 

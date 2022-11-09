@@ -1,5 +1,5 @@
 import { Card, Col, Row } from "react-bootstrap";
-import '../styles/StaffDashboardOverview.css';
+import '../App.css';
 
 const CustomCard = ({pillColor, title, value}) => {
   return (

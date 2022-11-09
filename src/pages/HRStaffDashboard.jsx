@@ -2,7 +2,7 @@ import React, {Fragment} from "react";
 import { Row, Form, Button } from "react-bootstrap";
 import { CgSearch } from 'react-icons/cg';
 import { IoFilter } from 'react-icons/io5';
-import '../styles/DashboardLayout.css';
+import '../App.css';
 
 const HRStaffDashboard = () => {
   return (

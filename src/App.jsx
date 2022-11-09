@@ -17,15 +17,17 @@ import { routes } from "./Utilities/Routes";
 import Finance from "./pages/Finance";
 import Home from "./pages/Home";
 import Onboarding from "./pages/Onboarding";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
     <Fragment>
       <Router>
         <Routes>
+          <Route path="*" element={<ErrorPage/>}/>
           <Route element={<AuthLayout/>}>
             <Route index path="/" element={<Home />} />
-            <Route  path={routes.Signin} element={<SignIn/>}/>
+            <Route path={routes.Signin} element={<SignIn/>}/>
             <Route path={routes.ForgotPassword} element={<ForgotPassword />} />
             <Route path={routes.ResetPassword} element={<ResetPassword />} />
             <Route

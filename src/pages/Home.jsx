@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col, Navbar, Button } from "react-bootstrap";
 import IMAGES from "../assets/img/images";
-import '../styles/Home.css';
+import '../App.css';
 
 const Home = () => {
   return (
-    <Container fluid className="body">
+    <Container fluid className="home-body">
       <Navbar className="nav-bar">
         <Container>
           <Navbar.Brand href="#home">
