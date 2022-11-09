@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Row, Col, Form, Card, Stack } from "react-bootstrap";
 import data from '../Utilities/data.json';
-import '../styles/Consumptions.css';
+import '../App.css';
 
 const Consumptions = () => {
   return (

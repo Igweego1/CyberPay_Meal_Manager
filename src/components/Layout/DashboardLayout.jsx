@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Navbar, Card, Stack, Button, Form } from "react-bootstrap";
 import { routes, dashboardRoutes } from "../../Utilities/Routes";
-import '../../styles/DashboardLayout.css';
+import '../../App.css';
 import { Outlet, useNavigate } from "react-router-dom";
 import IMAGES from "../../assets/img/images";
 
@@ -29,7 +29,7 @@ const DashboardLayout = () => {
     links.splice(2, 0, 
       {
         name: 'Staff',
-        path: window.location.pathname === routes.HRDashboardOverview ? routes.HRDashboardOverview : routes.StaffDashboardOverview,
+        path: window.location.pathname === routes.HRDashboardOverview ? routes.HRStaffDashboard : routes.StaffDashboardOverview,
         icon: IMAGES.wallet
       },
       {

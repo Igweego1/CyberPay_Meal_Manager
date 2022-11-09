@@ -1,8 +1,11 @@
 import React, { Fragment } from "react";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import '../App.css';
+import { routes } from "../Utilities/Routes";
 
 const ForgotPassword = () => {
+  const navigate = useNavigate();
   return (
     <Fragment>
       <Card.Title className="text-center">Forgot Password</Card.Title>
@@ -25,7 +28,7 @@ const ForgotPassword = () => {
                 </Form.Group>
               </Col>
             </Row>
-            <Button className="w-100 mt-5 p-3 h6 mainBtn text-center text-white" size="lg">
+            <Button onClick={() => navigate(routes.ResetPassword)} className="w-100 mt-5 p-3 h6 mainBtn text-center text-white" size="lg">
               Reset password
             </Button>
           </Form>

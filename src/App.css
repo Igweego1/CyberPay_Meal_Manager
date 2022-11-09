@@ -133,6 +133,15 @@ input:focus, select:focus {
   position: relative;
 }
 
+.onboarding-body {
+  height: 100vh;
+  background-image: url('./assets/img/food-dark.png');
+  background-position: 0% -300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .morePadding {
   padding-top: 100px;
 }
@@ -281,4 +290,8 @@ input[type=number] {
 .inputBorder {
   border: 1px solid #E8EAED;
   border-radius: 0.375rem;
+}
+
+.adminBtn {
+  color: #206aa2 !important;
 }

@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import { Card, Form, Row, Col, Button } from "react-bootstrap";
-import {AiTwotoneEye} from 'react-icons/ai';
+import { useNavigate } from "react-router-dom";
+import {routes} from '../Utilities/Routes';
 import '../App.css';
 
 const SignIn = () => {
+  const navigate = useNavigate();
   return (
     <Fragment>
       <Card.Title className="text-center">Sign In</Card.Title>
@@ -38,10 +40,10 @@ const SignIn = () => {
                 </Form.Group>
               </Col>
               <Col className="text-end">
-                <Card.Link href="/" className="text-decoration-none minorText">Forgot pin?</Card.Link>
+                <Card.Link href={`${routes.ForgotPassword}`} className="text-decoration-none minorText">Forgot pin?</Card.Link>
               </Col>
             </Row>
-            <Button className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
+            <Button onClick={() => navigate(routes.Onboarding)} className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
               Sign In
             </Button>
           </Form>

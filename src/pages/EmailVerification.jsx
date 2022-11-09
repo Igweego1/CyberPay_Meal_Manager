@@ -1,9 +1,12 @@
 import React, {Fragment} from "react";
 import { Form, Button, Card } from "react-bootstrap";
 import OtpInput from "react-otp-input";
+import { useNavigate } from "react-router-dom";
+import {routes} from '../Utilities/Routes';
 import '../App.css';
 
 const EmailVerification = () => {
+  const navigate = useNavigate();
   const [code, setCode] = React.useState('');
   const handleChange = (code) => setCode(code);
 
@@ -20,7 +23,7 @@ const EmailVerification = () => {
             onChange={handleChange}
             numInputs={6}
           />
-          <Button className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
+          <Button onClick={() => navigate(routes.ChangePassword)} className="w-100 p-3 mt-5 h6 mainBtn text-center text-white" size="lg">
             Verify Account
           </Button>
         </Form>

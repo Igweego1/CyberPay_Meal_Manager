@@ -6,6 +6,7 @@ import cutleryimg from './cutlery.svg';
 import profileimg from './profile.svg';
 import foodimg from './food.png';
 import userimg from './user.svg';
+import foodDark from './food-dark.png';
 
 const IMAGES = {
     logo: cyblogo,
@@ -15,7 +16,8 @@ const IMAGES = {
     cutlery: cutleryimg,
     profile: profileimg,
     food: foodimg,
-    user: userimg
+    user: userimg,
+    foodDark: foodDark
 }
 
 export default IMAGES;
