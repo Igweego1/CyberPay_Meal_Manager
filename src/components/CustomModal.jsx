@@ -15,7 +15,7 @@ const CustomModal = (props) => {
       </Modal.Header>
       <Modal.Body>
         <Form>
-          <Row className="mx-5 ">
+          <Row className="mx-5">
             <Col xs={6}>
               <Row>
                 <Col xs={4}>
