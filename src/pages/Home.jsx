@@ -8,10 +8,10 @@ import { routes } from "../Utilities/Routes";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <Container fluid className="home-body">
+    <Container fluid className="p-0 home-body">
       <Navbar className="nav-bar">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img src={IMAGES.logo} alt="cyberlogo" />
           </Navbar.Brand>
           <div className="d-flex gap-3 h6 align-items-center">
@@ -21,7 +21,7 @@ const Home = () => {
         </Container>
       </Navbar>
       <Row className="mx-5 morePadding"> 
-        <Col className={'text-center text-md-start'} xs={12} md={6}>
+        <Col className={'text-center text-md-start'} xs={12} md={5}>
           <h1>Contact the Admin</h1>
           <p>
             Don’t panic.... quickly reach out to the Human 

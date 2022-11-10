@@ -126,20 +126,20 @@ input:focus, select:focus {
 /* Home */
 .home-body {
   height: 100vh;
-  background-image: url('./assets/img/food.png');
-  background-position: 0% -300px;
-  background-repeat: no-repeat;
+  background: url('./assets/img/food.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  position: relative;
 }
 
 .onboarding-body {
   height: 100vh;
-  background-image: url('./assets/img/food-dark.png');
-  background-position: 0% -300px;
-  background-repeat: no-repeat;
+  background: url('./assets/img/food-dark.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  position: relative;
 }
 
 .morePadding {
